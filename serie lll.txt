@@ -1,0 +1,16 @@
+1. ¿Qué error(es) hay en este código? Cómo lo solucionaría
+
+Yo encontré que el constructor no completa todos los datos de la reserva, porque solo guarda el cliente y la habitación. También vi que el método calcular  está como static, pero usa la variable `Noches`, y eso da error. Para arreglarlo, completaría la inicialización de las variables y cambiaría el método para que pueda usar los datos de la reserva.
+
+2. ¿Qué diferencias habría si Reserva fuera una clase en vez de struct?
+
+Si fuera una clase, sería más fácil agregarle cosas nuevas en el futuro. Además, las clases trabajan con referencias y los `struct` trabajan copiando los datos. Para una reserva de hotel, yo usaría una clase porque me parece mas facil de usar
+
+3. Según su opinión, los nombres son correctos. ¿Por qué?
+
+Sí, porque son nombres fáciles de entender. Cuando leo Cliente, habitacion o hueped, sé de inmediato qué información guardan. Lo mismo pasa con calcular costo, porque explica  lo que hace.
+
+
+4. ¿Está este código estructurado para mejorarse en futuras versiones?
+
+Pienso que sí, aunque todavía se le pueden hacer mejoras. Por ejemplo, agregar validaciones, ordenar mejor el código y crear más métodos para manejar las reservas. También podría cambiarse a una clase para que sea más fácil de ampliar a la hora que nosotros lo utilicemos
